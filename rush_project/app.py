@@ -4,11 +4,11 @@ from pymysql import connections
 app = Flask(__name__)
 
 db_conn = connections.Connection(
-    host="localhost",
+    host="oneklick.cw7prjouhrhc.us-east-1.rds.amazonaws.com",
     port=3306,
-    user="user",
-    password="password",
-    db="db"
+    user="admin",
+    password="OneKlick",
+    db="OneKlick"
 )
 
 @app.route("/", methods=['GET', 'POST'])
